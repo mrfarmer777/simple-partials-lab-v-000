@@ -1,14 +1,14 @@
-<% @my_local=my_local%>
+<%= form_for @student do |f|%>
 <p>
-  <%= my_local.label :name %>
-  <%= my_local.text_field :name %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
 </p>
 <p>
-  <%= my_local.label :hometown %>
-  <%= my_local.text_field :hometown %>
+  <%= f.label :hometown %>
+  <%= f.text_field :hometown %>
 </p>
 <p>
-  <%= my_local.label :birthday %>
-  <%= my_local.date_field :birthday %>
+  <%= f.label :birthday %>
+  <%= f.date_field :birthday %>
 </p>
-  <%= my_local.submit %>
+  <%= f.submit %>
