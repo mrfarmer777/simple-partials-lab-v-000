@@ -1,14 +1,14 @@
 
 <p>
-  <%=label_tag :name %>
-  <%=text_field_tag :name %>
+  <%= my_local.label :name %>
+  <%= my_local.text_field :name %>
 </p>
 <p>
-  <%=label_tag :hometown %>
-  <%= text_field_tag :hometown %>
+  <%= my_local.label :hometown %>
+  <%= my_local.text_field :hometown %>
 </p>
 <p>
-  <%= label_tag :birthday %>
-  <%= text_field_tag :birthday %>
+  <%= my_local.label :birthday %>
+  <%= my_local.date_field :birthday %>
 </p>
-  <%= submit_tag %>
+  <%= my_local.submit %>
